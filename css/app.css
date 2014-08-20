@@ -1,0 +1,74 @@
+#wpadminbar {
+  position: fixed !important
+}
+
+/*
+Site Header
+*/
+
+.site-header {
+	margin: 0 0 40px 0;
+	padding: 40px 0;
+	background: #074e68
+}
+.site-title a {
+	color: #fff
+}
+.site-title a:hover {
+	color: #ccc
+}
+.site-description {
+	color: #ccc
+}
+
+/*
+Off-canvas sidebar
+*/
+
+.off-canvas-list ul {
+  list-style-type: none;
+  margin: 0;
+  border-left: 10px solid #000
+}
+.off-canvas-widget abbr {
+  color: #777
+}
+
+/*
+Site Footer
+*/
+
+.site-footer {
+	margin-top: 40px;
+	padding: 40px 0;
+  color: #999;
+	background: #085a78
+}
+.site-footer h4 {
+  color: #ddd
+}
+.site-footer ul {
+  list-style-type: none;
+  margin: 0
+}
+.site-footer a {
+  color: #aaf
+}
+.site-footer a:hover {
+  color: #fff
+}
+.site-footer abbr {
+  color: #999
+}
+
+/*
+Site Info
+(below the Site Footer)
+*/
+
+.site-info {
+	margin: 0;
+	padding: 20px;
+	color: #666;
+	background: #333
+}
