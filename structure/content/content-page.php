@@ -15,7 +15,6 @@
 				'after' => '</p></nav>' 
 			));
 		?>
-		<p><?php the_tags(); ?></p>
 	</footer>
 
 </article>
