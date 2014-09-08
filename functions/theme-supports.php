@@ -3,11 +3,14 @@
   if( ! function_exists( 'fst_theme_support' ) ) {
       function fst_theme_support() {
   
+          // Tiny-MCE WYSYWYG Editor stylesheet 
+          add_editor_style( 'css/editor-style.css' );
+
           // Add post thumbnail supports. 
-        	// http://codex.wordpress.org/Post_Thumbnails
+          // http://codex.wordpress.org/Post_Thumbnails
           add_theme_support('post-thumbnails');
   
-        	// set_post_thumbnail_size(150, 150, false);
+          // set_post_thumbnail_size(150, 150, false);
           add_image_size('fst-lrg', 1024, 99999);
           add_image_size('fst-med', 768, 99999);
           add_image_size('fst-sm', 320, 9999);
