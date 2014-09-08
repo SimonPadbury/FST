@@ -1,0 +1,12 @@
+/*
+Editor stylesheet
+=================
+1. Import the App CSS (the same CSS as is used for the front-end of this theme).
+2. Then add some CSS to improve your experience in the tiny-mce editor.
+*/
+
+@import url('app.css');
+
+body.wp-autoresize {
+	padding: 10px !important;
+}
