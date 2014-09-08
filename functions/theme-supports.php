@@ -8,9 +8,9 @@
           add_theme_support('post-thumbnails');
   
         	// set_post_thumbnail_size(150, 150, false);
-          add_image_size('fd-lrg', 1024, 99999);
-          add_image_size('fd-med', 768, 99999);
-          add_image_size('fd-sm', 320, 9999);
+          add_image_size('fst-lrg', 1024, 99999);
+          add_image_size('fst-med', 768, 99999);
+          add_image_size('fst-sm', 320, 9999);
   
           // rss thingy
           add_theme_support('automatic-feed-links');
