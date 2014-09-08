@@ -16,6 +16,6 @@
 		?>
 	</footer>
 
-	<?php comments_template('/structure/comments.php'); ?>
+	<?php comments_template('/structure/content/comments.php'); ?>
 
 </article>
