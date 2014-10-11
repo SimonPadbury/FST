@@ -19,6 +19,9 @@ if( ! function_exists( 'fst_scripts_and_styles ' ) ) {
       wp_enqueue_script( 'app' );
       
       // Register and enqueue stylesheets
+      // NOTE: Do not register 'foundation-stylesheet' if you are compiling app.css from the SCSS files
+      // because app.scss contains @import "foundation"
+      
       wp_register_style( 'normalize', get_stylesheet_directory_uri() . '/css/normalize.css', array(), '', 'all' );
       wp_register_style( 'foundation-stylesheet', get_stylesheet_directory_uri() . '/css/foundation.min.css', array(), '' );
       wp_register_style( 'app', get_stylesheet_directory_uri() . '/css/app.css', array(), '', 'all' );
