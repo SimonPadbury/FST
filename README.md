@@ -2,7 +2,7 @@
 
 **FST is a [ZURB Foundation](http://foundation.zurb.com) Starter Theme for WordPress.**
 
-_Version 1.1_
+_Version 1.2_
 
 ---
 
@@ -14,9 +14,13 @@ _Version 1.1_
 * Wysywyg editor styled by the same app.css through @import
 * Enqueued scripts (JS) and stylesheets (CSS)
 * Using WordPress's [onboard jQuery](http://matthewruddy.com/using-jquery-with-wordpress/)
-* [SCSS](http://sass-lang.com) included and ready to use
+* [SCSS](http://sass-lang.com) included and ready to use.
 * [MIT (open source) licence](http://opensource.org/licenses/MIT) - same as Foundation
 
 ---
 
 FST is capable of being used as a WordPress theme as-is. But it is intended as a _starter_ theme for you to develop.
+
+##Note on SCSS
+
+If you are compiling css/app.css from scss/app.scss, go to functions/enqueues.php and **comment out the register and enque for 'foundation-stylesheet' - because app.scss contains @import "foundation"
