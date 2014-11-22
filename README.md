@@ -5,6 +5,7 @@
 _Version 1.3_
 
 FST is capable of being used as a WordPress theme as-is. But it is intended as a _starter_ theme for you to develop.
+
 ---
 
 ###Features
