@@ -22,7 +22,7 @@
 					<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
 				</section>
 				<section class="right-small">
-					<a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+					<a class="right-off-canvas-toggle menu-icon" href=""><span></span></a>
 				</section>
 			</nav>
 			<aside class="right-off-canvas-menu">
