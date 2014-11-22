@@ -4,6 +4,7 @@
 
 _Version 1.3_
 
+FST is capable of being used as a WordPress theme as-is. But it is intended as a _starter_ theme for you to develop.
 ---
 
 ###Features
@@ -18,8 +19,6 @@ _Version 1.3_
 * [MIT (open source) licence](http://opensource.org/licenses/MIT) - same as Foundation
 
 ---
-
-FST is capable of being used as a WordPress theme as-is. But it is intended as a _starter_ theme for you to develop.
 
 ###Note on SCSS
 
