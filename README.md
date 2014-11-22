@@ -2,13 +2,13 @@
 
 **FST is a [ZURB Foundation](http://foundation.zurb.com) Starter Theme for WordPress.**
 
-_Version 1.2_
+_Version 1.3_
 
 ---
 
 ###Features
 
-* Incorporating [ZURB Foundation](http://foundation.zurb.com) (v.5.3.3)
+* Incorporating [ZURB Foundation](http://foundation.zurb.com) (v.5.4.7)
 * Responsive website design with an [off-canvas](http://foundation.zurb.com/docs/components/offcanvas.html) sidebar menu for small-screen devices
 * Based originally on [Underscores](http://underscores.me) - but here the PHP files are reorganised in folders
 * Wysywyg editor styled by the same app.css through @import
