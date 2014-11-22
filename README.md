@@ -13,7 +13,7 @@ _Version 1.3_
 * Based originally on [Underscores](http://underscores.me) - but here the PHP files are reorganised in folders
 * Wysywyg editor styled by the same app.css through @import
 * Enqueued scripts (JS) and stylesheets (CSS)
-* Using WordPress's [onboard jQuery](http://matthewruddy.com/using-jquery-with-wordpress/)
+* Optional: enqueue Google CDN hosted jQuery or use WordPress's onboard jQuery
 * [SCSS](http://sass-lang.com) included and ready to use.
 * [MIT (open source) licence](http://opensource.org/licenses/MIT) - same as Foundation
 
