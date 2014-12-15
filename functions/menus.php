@@ -43,34 +43,6 @@ class fst_walker extends Walker_Nav_Menu {
 	}
 }
 
-/*
-Menus fallback (top-bar and off-canvas)
-*/
-function fst_link_to_menu_editor( $args ) {
-	if ( ! current_user_can( 'manage_options' ) ) {
-		return;
-	}
-	extract( $args );
-  
-	$link = $link_before . '<a href="' .admin_url( 'nav-menus.php' ) . '">' . $before . 'Add a menu' . $after . '</a>' . $link_after;
-  
-	if ( FALSE !== stripos( $items_wrap, '<ul' ) or FALSE !== stripos( $items_wrap, '<ol' ) ) {
-		$link = "<li>$link</li>";
-	}
-  
-	$output = sprintf( $items_wrap, $menu_id, $menu_class, $link );
-    
-	if ( ! empty ( $container ) ) {
-		$output  = "<$container class='$container_class' id='$container_id'>$output</$container>";
-	}
-  
-	if ( $echo ) {
-  		echo $output;
-	}
-  
-	return $output;
-}
-
 // Add Foundation 'active' class for the top-bar current menu item (blue background item)
 if( ! function_exists( 'fst_active_nav_class' ) ) {
 	function fst_active_nav_class( $classes, $item ) {
