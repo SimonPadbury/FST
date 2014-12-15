@@ -6,14 +6,14 @@
     
     <div class="site-info">
       <div class="row">
-        <div class="large-4 columns">
+        <div class="medium-4 columns">
           Theme: FST by <a href="http://simonpadbury.com/" rel="designer">Simon Padbury</a>
         </div>
-        <div class="large-4 columns">
-          &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
+        <div class="medium-4 columns">
+          &copy; <?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </div>
-        <div class="large-4 columns">
-          <a  class="right" href="<?php echo esc_url( __( 'http://wordpress.org/', 'fst' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'fst' ), 'WordPress' ); ?></a>
+        <div class="medium-4 columns">
+          <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'fst' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'fst' ), 'WordPress' ); ?></a>
         </div>
       </div>
     </div>
