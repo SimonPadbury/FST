@@ -44,7 +44,7 @@ class fst_walker extends Walker_Nav_Menu {
 }
 
 /*
-Menu fallback
+Menus fallback (top-bar and off-canvas)
 */
 function link_to_menu_editor( $args ) {
 	if ( ! current_user_can( 'manage_options' ) ) {
