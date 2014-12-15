@@ -21,7 +21,7 @@ FST is capable of being used as a WordPress theme as-is. But it is intended as a
 
 ---
 
-###Note on SCSS
+###Notes on using SCSS
 
 If you are compiling css/app.css from scss/app.scss, go to functions/enqueues.php and **comment out** the register and enque for 'foundation-stylesheet' - because app.scss contains `@import "foundation";`.
 
