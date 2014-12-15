@@ -1,9 +1,6 @@
 <?php 
 
-/*
-Top Bar and Off-Canvas Sidebar menus
-*/
-
+// Register Top-Bar and Off-Canvas Sidebar menus
 register_nav_menus(
 	array(
 		'top-bar-left' => __('Top-bar Left', 'fst'),
@@ -13,6 +10,7 @@ register_nav_menus(
 	)
 );
 
+// Foundation Top-Bar extension for WordPress Walker Nav-Menu
 class fst_walker extends Walker_Nav_Menu {
 	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
 		$element->has_children = !empty( $children_elements[$element->ID] );
