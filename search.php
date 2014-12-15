@@ -3,7 +3,7 @@
 <div class="container" role="document">
 	<div class="row">
 
-		<section class="large-8 columns" id="content" role="main">
+		<section class="medium-8 columns" id="content" role="main">
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 	
 				<h1><?php _e('Search Results for', 'fst'); ?> "<?php echo get_search_query(); ?>"</h1>
@@ -26,7 +26,7 @@
 			</article>
 		</section>
 
-		<aside id="sidebar" class="large-4 columns">
+		<aside id="sidebar" class="medium-4 columns">
 			<?php get_template_part('structure/sidebar'); ?>
 		</aside>
 
