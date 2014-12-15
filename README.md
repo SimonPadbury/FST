@@ -13,7 +13,7 @@ FST is capable of being used as a WordPress theme as-is. But it is intended as a
 * Incorporating [ZURB Foundation](http://foundation.zurb.com) (v.5.4.7)
 * Responsive website design with an [off-canvas](http://foundation.zurb.com/docs/components/offcanvas.html) sidebar menu for small-screen devices
 * Based originally on [Underscores](http://underscores.me) - but here the PHP files are reorganised in folders
-* WYSIWYG (Tiny-MCE) editor typography etc. styled by the same app.css through @import
+* WYSIWYG (Tiny-MCE) editor typography etc. styled by the same app.css through `@import` in css/editor-style.css
 * Enqueued scripts (JS) and stylesheets (CSS)
 * Optional: enqueue Google CDN hosted jQuery or use WordPress's onboard jQuery
 * [SCSS](http://sass-lang.com) included and ready to use.
