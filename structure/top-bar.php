@@ -5,11 +5,11 @@
         'container' => false,
         'depth' => 0,
         'items_wrap' => '<ul class="left">%3$s</ul>',
-        'fallback_cb' => 'fst_menu_fallback', // Show fallback message if no menus
+        'fallback_cb' => 'fst_link_to_menu_editor',
         'walker' => new fst_walker( array(
-          'in_top_bar' => true,
-          'item_type' => 'li',
-          'menu_type' => 'main-menu'
+            'in_top_bar' => true,
+            'item_type' => 'li',
+            'menu_type' => 'main-menu'
         ) ),
     ) );
 ?>
@@ -19,10 +19,11 @@
         'container' => false,
         'depth' => 0,
         'items_wrap' => '<ul class="right">%3$s</ul>',
+        'fallback_cb' => 'fst_link_to_menu_editor',
         'walker' => new fst_walker( array(
-        'in_top_bar' => true,
-        'item_type' => 'li',
-        'menu_type' => 'main-menu'
+            'in_top_bar' => true,
+            'item_type' => 'li',
+            'menu_type' => 'main-menu'
         ) ),
     ) );
 ?>
