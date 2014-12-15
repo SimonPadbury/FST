@@ -1,0 +1,18 @@
+/*
+Editor stylesheet
+=================
+In order to style the Tiny-MCE WYSIWYG editor to almost* resemble your website's front-end, you can: 
+
+(1.) @import your stylesheet, and then
+(2.) Add some CSS to improve your experience in the tiny-mce editor.
+
+[* The only major difference is, the width of the editor is different to the width of your front-end blog/page entry.]
+
+As a default, I have here imported the stylesheet 'foundation.css'. But if you are pre-processing from the SCSS files, and if you @import Foundation into your 'app.scss', then you may here import your 'app.css' instead of the 'foundation.css' (on line 12 below).
+*/
+
+@import url('foundation.css');
+
+body#tinymce {
+	padding: 1rem !important;
+}
