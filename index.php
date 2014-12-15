@@ -3,7 +3,7 @@
 <div class="container" role="document">
 	<div class="row">
 
-		<section class="large-8 columns" id="content" role="main">
+		<section class="medium-8 columns" id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -22,7 +22,7 @@
 
 		</section>
 
-		<aside id="sidebar" class="large-4 columns">
+		<aside id="sidebar" class="medium-4 columns">
 			<?php get_template_part('structure/sidebar'); ?>
 		</aside>
 
