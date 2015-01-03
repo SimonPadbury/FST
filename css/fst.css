@@ -1,0 +1,220 @@
+/*
+Max content widths
+*/
+
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto
+}
+
+/*
+Off-canvas sidebar
+*/
+
+.off-canvas-list ul {
+  list-style-type: none;
+  margin: 0;
+  border-left: 10px solid #000
+}
+.off-canvas-widget abbr {
+  color: #777
+}
+
+.off-canvas-widget .widget-search {
+  padding: 1.1rem
+}
+
+/*
+Site Header
+*/
+
+.site-header {
+	margin: 0 0 40px 0;
+	padding: 40px 0;
+	background: #074e68
+}
+.site-title a {
+	color: #fff
+}
+.site-title a:hover {
+	color: #aaf
+}
+.site-description {
+	color: #ccc
+}
+
+/*
+Main content
+*/
+
+#content article {
+  margin-bottom: 40px
+}
+#content header {
+  margin: 2rem 0
+}
+#content header h4, #content header p {
+  color: #999
+}
+#content section {
+  margin-bottom: 2rem
+}
+#content footer {
+  padding-bottom: 2rem
+}
+#content footer p {
+  color: #999
+}
+
+/*
+Sidebar
+*/
+
+.sidebar {
+  margin-top: 2rem
+}
+.sidebar section {
+  margin-bottom: 3rem
+}
+.sidebar ul,
+.sidebar ol {
+  list-style-type: none;
+  margin-left: 0
+}
+.sidebar li a {
+  display: block;
+  margin: 0.625rem 0
+}
+
+.widget-search button {
+  padding: 0.585rem;
+}
+
+
+/*
+Hide form placeholders on focus
+*/
+
+input:focus::-webkit-input-placeholder { color: transparent; }
+input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+textarea:focus::-webkit-input-placeholder { color: transparent; }
+textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */ 
+
+/*
+Comments
+*/
+
+#respond {
+  margin-top: 3rem
+}
+.commentlist {
+	counter-reset: li; /* Initiate a counter */
+  margin: 0;
+	padding: 0
+}
+.commentlist ul {
+  padding: 0
+}
+.commentlist li {
+  border: 1px solid #ddd;
+}
+.commentlist > li {
+	position: relative;
+	margin: 0 0 2rem 0;
+	list-style: none /* Disable the normal item numbering */
+}
+.commentlist > li:before {
+  content: "Thread " counter(li); /* Use the counter as content */
+  counter-increment: li; /* Increment the counter by 1 */
+  position:absolute;  
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  color: #999
+}
+.commentlist li ol,
+.commentlist li ul {
+  list-style-type: none;
+  margin: 0
+}
+
+.commentlist li li {
+  background: #f9f9f9;
+}
+.commentlist li li li {
+  background: #fff
+}
+.commentlist li li li li {
+  background: #f9f9f9
+}
+.commentlist li li li li li li {
+  background: #fff
+}
+.commentlist li {
+  padding: 2rem
+}
+.commentlist ul li {
+  margin-top: 2rem;
+  margin-bottom: 0
+}
+.commentlist .vcard {
+  display: block;
+  margin: 0;
+  border: 0;
+  padding: 0
+}
+.reply p {
+  margin: 0
+}
+
+/*
+Site Footer Nav (widgets)
+*/
+
+.site-footer-nav {
+	margin-top: 40px;
+	padding: 40px 0;
+	color: #999;
+	background: #085a78
+}
+.site-footer-nav h4 {
+	color: #ddd
+}
+.site-footer-nav ul {
+	list-style-type: none;
+	margin: 0
+}
+.site-footer-nav a {
+  display: block;
+  margin: 0.625rem 0;
+ 	color: #aaf
+}
+.site-footer-nav a:hover {
+ 	color: #fff
+}
+.site-footer-nav abbr {
+ 	color: #999
+}
+
+/*
+Site Footer Info (Copyright line)
+*/
+
+.site-footer-info {
+	margin: 0;
+	padding: 20px;
+	color: #666;
+	background: #333
+}
+.site-footer-info p {
+  margin: 0;
+  text-align: center
+}
