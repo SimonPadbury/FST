@@ -1,17 +1,25 @@
 /*
 Theme Name: FST
-Theme URI: 
-Description: Foundation Starter Theme, for WordPress
-Version: 1.2 (Foundation version 5.3.3)
+Theme URI: http://simonpadbury.com
+Description: Foundation Starter Theme for WordPress. Using Zurb Foundation 5.5.0
 Author: Simon Padbury
 Author URI: http://simonpadbury.com
-License: MIT License (same as Foundation)
-License URI: http://www.opensource.org/licenses/mit-license.php
+Version: 2.0
+License: MIT License
+License URI: http://opensource.org/licenses/MIT
 */
 
 /*
-NOTES
-(1.) Your styles must not be put in here, but in css/app.css
-(2.) You can add your styles directly into css/app.css – or if you know SCSS, you can add your styles into scss/app.scss and compile app.css from there.
-(3.) If you use app.css, you much go to functions/enqueues.php and comment out (or delete) the register and enqueue for 'foundation-stylesheet' because app.scss contains @import "foundation"
+TO DO
+=====
+(1.) √ DONE Switch to Foundation CSS and JS, in the folders and enqueues
+(2.) √ DONE Sort out the header, and the top-bar
+(3.) √ DONE Put a searcher in the top-bar
+(4.) √ DONE Put the grid into the templates
+(5.) √ DONE Sort out README.md
+(6.) √ DONE Swap bst for fst EVERYWHERE
+(7.) √ DONE Foundation ICONS
+(8.) √ DONE Off-canvas Widgets
+(9.) √ DONE Pagination
+(10.) Proof-read and test-drive
 */

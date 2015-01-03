@@ -1,41 +1,39 @@
 <?php
 
-if( ! function_exists( 'fst_scripts_and_styles ' ) ) {
-	function fst_scripts_and_styles() {
-	  if ( !is_admin() ) {
+function fst_enqueues() {
 
-      //Register and enqueue scripts
-      // NOTE: Using the WP onboard jQuery
-      // See: http://matthewruddy.com/using-jquery-with-wordpress/
-      
-      wp_register_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.6.2', false );
-      wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '5.3.3', true );
-      wp_register_script( 'app', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), '1.0', true );
-      
-      
-      wp_enqueue_script( 'modernizr' );
-      wp_enqueue_script( 'jquery' );
-      wp_enqueue_script( 'foundation' );
-      wp_enqueue_script( 'app' );
-      
-      // Register and enqueue stylesheets
-      // NOTE: Do not register or enqueue 'foundation-stylesheet' if you are compiling app.css from the SCSS files,
-      // because app.scss contains @import "foundation"
-      
-      wp_register_style( 'normalize', get_stylesheet_directory_uri() . '/css/normalize.css', array(), '', 'all' );
-      wp_register_style( 'foundation-stylesheet', get_stylesheet_directory_uri() . '/css/foundation.min.css', array(), '' );
-      wp_register_style( 'app', get_stylesheet_directory_uri() . '/css/app.css', array(), '', 'all' );
-      
-      wp_enqueue_style( 'normalize' );
-      wp_enqueue_style( 'foundation-stylesheet' );
-      wp_enqueue_style( 'app' );
-      
-      // comment reply script for threaded comments
-      if( get_option( 'thread_comments' ) ) { wp_enqueue_script( 'comment-reply' ); }
+  // Register and enqueue stylesheets
 
-	  }
+  wp_register_style('normalize-css', get_template_directory_uri() . '/css/normalize.css', false, '3.0.2', null);
+	wp_enqueue_style('normalize-css');
+
+  wp_register_style('foundation-css', get_template_directory_uri() . '/css/foundation.min.css', false, '5.5.0', null);
+	wp_enqueue_style('foundation-css');
+
+  wp_register_style('foundation-icons-css', get_template_directory_uri() . '/fonts/foundation-icons.css', false, '3.0', null);
+	wp_enqueue_style('foundation-icons-css');
+
+  wp_register_style('fst-css', get_template_directory_uri() . '/css/fst.css', false, null);
+	wp_enqueue_style('fst-css');
+
+  // Register and enqueue JavaScripts
+
+	wp_register_script('jquery', get_bloginfo('template_url').'/js/vendor/jquery.js', false, '2.1.1', true);
+	wp_enqueue_script( 'jquery' );
+
+  wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', false, null, true);
+	wp_enqueue_script('modernizr');
+
+  wp_register_script('foundation-js', get_template_directory_uri() . '/js/foundation.min.js', false, null, true);
+	wp_enqueue_script('foundation-js');
+
+	wp_register_script('fst-js', get_template_directory_uri() . '/js/fst.js', false, null, true);
+	wp_enqueue_script('fst-js');
+
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'fst_scripts_and_styles' );
+add_action('wp_enqueue_scripts', 'fst_enqueues', 100);
 
 ?>
