@@ -2,16 +2,34 @@
 
 *Version 2.0*
 
+<<<<<<< HEAD
 **FST is a simple WordPress starter theme loaded with ZURB Foundation 5.5.0.**
+=======
+_Version 1.5_
+
+FST is capable of being used as a WordPress theme as-is. But it is intended as a _starter_ theme for you to develop.
+>>>>>>> FETCH_HEAD
 
 [https://github.com/SimonPadbury/fst](https://github.com/SimonPadbury/fst)
 
 This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
 
+<<<<<<< HEAD
 **[MIT licence](http://opensource.org/licenses/MIT)** (open source).
+=======
+* Incorporating [ZURB Foundation](http://foundation.zurb.com) (v.5.4.7)
+* Responsive website design with an [off-canvas](http://foundation.zurb.com/docs/components/offcanvas.html) sidebar menu for small-screen devices
+* Based originally on [Underscores](http://underscores.me) - but here the PHP files are reorganised in folders
+* WYSIWYG (Tiny-MCE) editor typography etc. styled by the same app.css through `@import` in css/editor-style.css
+* Enqueued scripts (JS) and stylesheets (CSS)
+* Optional: enqueue Google CDN hosted jQuery or use WordPress's onboard jQuery
+* [SCSS](http://sass-lang.com) included and ready to use.
+* [MIT (open source) licence](http://opensource.org/licenses/MIT) - same as Foundation
+>>>>>>> FETCH_HEAD
 
 **Note:** in January 2015 this theme had a major re-build, bringing its base files in line with [BST](https://github.com/SimonPadbury/bst), my Bootstrap Starter Theme for WordPress. Now users of either theme will feel 'at home' in the other.
 
+<<<<<<< HEAD
 -----
 
 ##Features of FST
@@ -64,3 +82,10 @@ You can easily make this theme your own by following these steps:
 5. Modify the comments in style.css.
 
 Do all that correctly, and this WordPress theme will still work!
+=======
+###Notes on using SCSS
+
+If you are compiling css/app.css from scss/app.scss, go to functions/enqueues.php and **comment out** the register and enque for 'foundation-stylesheet' - because app.scss contains `@import "foundation";`.
+
+And if you are using @import to compile the Foundation SCSS into your app.scss, you will want to go to css/editor-style.css and therein swap `@import 'foundation.css';` for `@import 'app.css';`.
+>>>>>>> FETCH_HEAD
