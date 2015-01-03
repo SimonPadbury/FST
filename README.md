@@ -1,4 +1,4 @@
-#FST - A Bootstrap Starter Theme for WordPress
+#FST - A ZURB Foundation Starter Theme for WordPress
 
 *Version 2.0*
 
