@@ -33,7 +33,6 @@ Site Header
 */
 
 .site-header {
-	margin: 0 0 40px 0;
 	padding: 40px 0;
 	background: #074e68
 }
@@ -51,23 +50,26 @@ Site Header
 Main content
 */
 
+.main-section {
+	padding: 2rem 0
+}
 #content article {
-  margin-bottom: 40px
+	margin-bottom: 2rem
 }
 #content header {
-  margin: 2rem 0
+	margin: 2rem 0
 }
 #content header h4, #content header p {
-  color: #999
+	color: #999
 }
 #content section {
-  margin-bottom: 2rem
+	margin-bottom: 2rem
 }
 #content footer {
-  padding-bottom: 2rem
+	padding-bottom: 2rem
 }
 #content footer p {
-  color: #999
+	color: #999
 }
 
 /*
@@ -180,7 +182,6 @@ Site Footer Nav (widgets)
 */
 
 .site-footer-nav {
-	margin-top: 40px;
 	padding: 40px 0;
 	color: #999;
 	background: #085a78
