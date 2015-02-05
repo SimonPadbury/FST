@@ -1,8 +1,8 @@
 #FST - A ZURB Foundation Starter Theme for WordPress
 
-*Version 2.0*
+*Version 2.1*
 
-**FST is a simple WordPress starter theme loaded with ZURB Foundation 5.5.0.**
+**FST is a simple WordPress starter theme loaded with ZURB Foundation 5.5.1.**
 
 [https://github.com/SimonPadbury/fst](https://github.com/SimonPadbury/fst)
 
@@ -17,8 +17,8 @@ This theme has been built for use as a starter theme and as a learning aid for p
 ##Features of FST
 
 1. **Simple, intuitive, clean code** – CSS, JS, functions, template includes and loops are organized into different folders.
-2. **ZURB Foundation 5.5.0** – CSS and JS enqueued in *functions/enqueues.php*. 
-3. **jQuery 2.1.0 enqueued** – from the *foundation/vendors/* folder.
+2. **ZURB Foundation 5.5.1** – CSS and JS enqueued in *functions/enqueues.php*. 
+3. **jQuery 2.1.3 enqueued** – from the *foundation/vendors/* folder.
 4. **Foundation icon fonts included** – [http://zurb.com/playground/foundation-icon-fonts-3](http://zurb.com/playground/foundation-icon-fonts-3). These are used in various places throughout this theme. 
 5. **Two WordPress menu positions in the Foundation top-bar** – left and right.
 6. **Optional search form built into the top-bar**
