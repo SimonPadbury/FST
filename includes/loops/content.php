@@ -17,14 +17,14 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
             <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
             <h4>
               <em>
-                <span class="author"><?php _e('By', 'fbst'); echo " "; the_author() ?>,</span>
+                <span class="author"><?php _e('By', 'fst'); echo " "; the_author() ?>,</span>
                 <time datetime="<?php the_time('d-m-Y')?>"><?php the_time('jS F Y') ?></time>
               </em>
             </h4>
         </header>
         <section>
             <?php the_post_thumbnail(); ?>
-            <?php the_content( __( '&hellip; ' . __('Continue reading', 'fst' ) . ' <big><i class="fi-arrow-right"></i></big>', 'bst' ) ); ?>
+            <?php the_content( __( '&hellip; ' . __('Continue reading', 'fst' ) . ' <big><i class="fi-arrow-right"></i></big>', 'fst' ) ); ?>
         </section>
         <footer>
             <p style="margin-bottom: 2rem;">
