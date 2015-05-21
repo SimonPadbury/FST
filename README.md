@@ -1,6 +1,6 @@
 #FST - A ZURB Foundation Starter Theme for WordPress
 
-*Version 2.2*
+*Version 2.2.1*
 
 **FST is a simple WordPress starter theme loaded with ZURB Foundation 5.5.2.**
 
